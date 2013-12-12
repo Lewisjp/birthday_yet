@@ -1,5 +1,5 @@
-require './avm'
+require './app'
 
-run Game::AVM_App
+run AVM_App
 
 
