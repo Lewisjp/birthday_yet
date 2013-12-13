@@ -1,4 +1,4 @@
-require './lib/index.rb'
+require './lib/avm.rb'
 require 'bundler'
 Bundler.require
 
