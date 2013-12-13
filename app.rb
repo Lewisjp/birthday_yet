@@ -17,4 +17,10 @@ class AVM_App < Sinatra::Application
 	   erb :avm
 	end
 
+	post '/avm' do
+		@answer = params["question"]
+		@results = AVM.new(answer)
+		erb :avm
+	end
+
 end
