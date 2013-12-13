@@ -4,11 +4,11 @@ class AVM
 
 	def initialize(answers)
 		@id = answers
-		@whatyouare = process(id)
+		@whatyouare = process
 		display
 	end
 
-	def process(id)
+	def process
 		animal = 0
 		veggie = 0
 		mineral = 0
@@ -54,15 +54,20 @@ class AVM
 				return  "nothing"
 			end
 		end	
-
 	end
 
 
 	def display
-		puts whatyouare
+		if whatyouare.nil?
+			"Nothing got recorded"
+		else
+			whatyouare
+		end
 	end
 
 end
 
 # test = {"question"=>{"0"=>"mineral", "1"=>"animal", "2"=>"animal"}, "splat"=>[], "captures"=>["avm"], "form_type"=>"avm"}
 # show = AVM.new(test)
+
+# puts show.inspect
