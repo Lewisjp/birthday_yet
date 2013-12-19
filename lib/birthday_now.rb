@@ -27,7 +27,7 @@ class Birthday
 
 		if today.mon == birthday.mon
 			if today.mday == birthday.mday
-				birthday = true
+				@birthday = true
 				birthday_video
 				return "Happy Birthday!"
 			else
