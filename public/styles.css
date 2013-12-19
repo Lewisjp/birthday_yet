@@ -1,5 +1,62 @@
 body
 {
 	text-align: center;	
+	font-family: 'Rum Raisin', sans-serif;
 }
 
+
+.NES 
+{
+	position:absolute;
+	height: 40% auto;
+	width: 40% auto;
+
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+} 
+
+
+.intro
+{
+
+
+	position:absolute;
+	left: 300px;
+	top: 26px;
+
+	background: #996600;
+
+	border: 1px solid;
+		#853333;
+		border-top-color: #996600;
+			border-top-style: solid;
+			border-top-width: 20px;
+		border-right-color: #996600; 
+			border-right-style: solid;
+			border-right-width: 50px;
+		border-bottom-color: #996600; 
+			border-bottom-style: solid;
+			border-bottom-width: 25px;
+		border-left-color: #996600; 
+			border-left-style: solid;
+			border-left-width: 50px;
+
+
+}
+
+.nes_twitter
+{
+	position: absolute;
+	top: 26px;
+	right: 30px;
+	text-align:right;
+	z-index:-1;
+}
+
+
+.wrap_it
+{
+
+}

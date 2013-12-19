@@ -1,5 +1,5 @@
 require './app'
 
-run AVM_App
+run Birthday_APP
 
 

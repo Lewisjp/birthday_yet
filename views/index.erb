@@ -1,55 +1,49 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  	<title>Are you a Animal, Vegetable or Mineral?
-  	</title>
-  	<link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
+<body>
 
-  	<h1>Are you a Animal, Vegetable or Mineral?</h1>
+  <div class="wrap_it">
 
-  	<form action="/avm" method="POST">
+    <div class="NES">
 
-	  <label for="Post-item"><b>One of these is a secret of yours</b></label>
-	  <br><br>
-	  <input type="radio" id="Post-item" name="question[0]" value="animal">
-	  	"You have fur."
-	  <br>
-	  <input type="radio" id="Post-item" name="question[0]" value="vegetable">
-	  	"You have a pointy head"
-	  <br>
-	  <input type="radio" id="Post-item" name="question[0]" value="mineral">
-	  	"You make food taste better."
-	  <br><br>
+        <img src='/img/nes.jpg' alt="NES cartridge" width="720" height="880">
 
-	  <label for="Post-item"><b>Your friends would say this about you</b></label>
-	  <br><br>
-	  <input type="radio" id="Post-item" name="question[1]" value="animal">
-	  	"You have claws."
-	  <br>
-	  <input type="radio" id="Post-item" name="question[1]" value="vegetable">
-	  	"Rabbits chew on you."
-	  <br>
-	  <input type="radio" id="Post-item" name="question[1]" value="mineral">
-	  	"You like to shake it."
-	  <br><br>
-
-	  <label for="Post-item"><b>Which of these would best describe you?</b></label>
-	  <br><br>
-	  <input type="radio" id="Post-item" name="question[2]" value="animal">
-	  	"You are brave."
-	  <br>
-	  <input type="radio" id="Post-item" name="question[2]" value="vegetable">
-	  	"You're naturally sweet."
-	  <br>
-	  <input type="radio" id="Post-item" name="question[2]" value="mineral">
-	  	"Having too much of you be deadly."
-
-	  <br><br>
-	  <button type="submit" value="avm">Ready to find out which you are?</button>
-	</form>  
+    </div>
 
 
-  </body>
-</html>
+    <div class="intro">
+
+        <h2><p>Lets check<br>Is it your birthday?</p></h2>
+
+        <img src="/img/space.png"><br><br>
+        <p>By digits</p>
+
+      	<form action="/birthday" method="POST">
+
+          <label for="POST-month">Enter Month</label>
+          <input maxlength="2" size="4" id="POST-month" type="text" name="birthday[0]">
+
+          <br>
+
+          <label for="POST-day">Enter Day</label>
+          <input maxlength="2" size="8" id="POST-day" type="text" name="birthday[1]">
+
+      	  <br><br><br>
+
+      	  <p>I'm excited.  Are you excited?</p>
+
+      	  <button type="submit" value="submit">Play Hard</button>
+      	</form>  
+    </div>
+
+    <div class="nes_twitter">
+
+      <a class="twitter-timeline" href="https://twitter.com/search?q=%23nintendo" data-widget-id="413781571779309568" width="700" height="840">Tweets about "#nintendo"</a>
+
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+    </div>
+
+  </div>
+
+</body>
